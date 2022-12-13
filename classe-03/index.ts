@@ -1,5 +1,5 @@
 const taAberto = (ano: number, mes: number, dia: number, hora: number) => {
-  const utcDate = new Date(Date.UTC(ano, mes, dia, hora));
+  const utcDate = new Date(ano, mes, dia, hora);
   if (utcDate.getHours() >= 8 && utcDate.getHours() <= 18) {
     return true;
   }

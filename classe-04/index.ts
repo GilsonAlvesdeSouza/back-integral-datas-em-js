@@ -5,7 +5,7 @@ const taAberto2 = (
   hora: number,
   minutos?: number
 ): Boolean => {
-  const utcDate = new Date(Date.UTC(ano, mes, dia, hora, minutos));
+  const utcDate = new Date(ano, mes, dia, hora, minutos);
   if (utcDate.getHours() >= 8 && utcDate.getHours() <= 18) {
     if (utcDate.getDay() > 0 && utcDate.getDay() < 6) {
       return true;
